@@ -1,0 +1,150 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.72px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.benefits-list {
+  height: 500px;
+  border: 1px solid #000000;
+}
+
+.benefits-list-item {
+  width: 300px;
+  border: 1px solid tomato;
+}
+
+/* .benefits-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+
+} */
+
+/* .benefits-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  gap: 20px;
+  row-gap: 20px;
+  column-gap: 40px;
+  gap: 40px 20px;
+} */
+
+/* .benefits-list-item-first {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.benefits-list-item-second {
+  flex-grow: 1;
+} */
+
+
+
+.benefits-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* .benefits-list-item-first {
+  order: 2;
+}
+
+.benefits-list-item-second {
+  order: 3;
+}
+
+.benefits-list-item-third {
+  order: 1;
+} */
+
+/* .benefits-list-item-first {
+  align-self: flex-start;
+}
+
+.benefits-list-item-second {
+  
+}
+
+.benefits-list-item-third {
+  align-self: flex-end;
+} */
+
+.benefits-list-item-first {
+}
+
+.benefits-list-item-second {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-list-item-third {
+}
+
+
+.block {
+  width: 60px;
+  height: 60px;
+  background-color: teal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
