@@ -1,0 +1,51 @@
+.background {
+  width: 900px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 10px dashed tomato;
+
+  /* background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top; */
+  /* background-origin: border-box;
+  background-clip: padding-box; */
+  /* background-size: cover; */
+
+}
+
+/* .background {
+  background-image: url("../images/bg.jpg"), url("https://picsum.photos/seed/picsum/200/300");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+} */
+
+/* .background {
+  background-image: linear-gradient(rgb(0 0 255 / 0.3), rgb(0 0 255 / 0.3)), url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: padding-box;
+  background-color: #111;
+
+  color: #fff;
+} */
+
+
+h2, p {
+  margin: 0;
+}
+
+.background {
+  background-image: 
+    linear-gradient(rgba(2 2 22 / 0.3),  rgb(0 0 255 / 0.3)), 
+    url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+}
+
+
+
