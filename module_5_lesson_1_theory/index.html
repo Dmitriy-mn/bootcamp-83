@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="order-form">
+      <label class="order-form-fiel-label" for="user-name">
+        Your name<sup class="required-color">*</sup>
+      </label>
+      <input 
+        class="order-form-field" 
+        id="user-name"
+        type="text" 
+        placeholder="Petya"
+        name="username"
+        minlength="2"
+        maxlength="20"
+        required
+      >
+
+      <label class="order-form-fiel-label" for="user-email">
+        Your email<sup class="required-color">*</sup>
+      </label>
+      <input 
+        class="order-form-field" 
+        id="user-email"
+        type="email" 
+        placeholder="test@gmail.com"
+        name="email"
+        required
+      >
+
+      <label class="order-form-fiel-label" for="user-phone">
+        Your phone<sup class="required-color">*</sup>
+      </label>
+      <input 
+        class="order-form-field" 
+        id="user-phone"
+        type="tel" 
+        placeholder="xxx-xxx-xx-xx"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        required
+      >
+
+      <fieldset class="pizza-size-wrapper">
+        <legend class="pizza-size-title">Pizza size</legend>
+        <ul class="pizza-size-list">
+          <li class="pizza-size-list-item">
+            <input 
+              type="radio" 
+              id="size-s" 
+              name="pizza-size"
+              value="s"
+            >
+            <label for="size-s">s</label>
+          </li>
+          <li class="pizza-size-list-item">
+            <input 
+              type="radio" 
+              id="size-m" 
+              name="pizza-size"
+              value="m"
+            >
+            <label for="size-m">m</label>
+          </li>
+          <li class="pizza-size-list-item">
+            <input 
+              type="radio" 
+              id="size-l" 
+              name="pizza-size"
+              value="l"
+              checked
+            >
+            <label for="size-l">l</label>
+          </li>
+        </ul>
+      </fieldset>
+
+
+      <fieldset class="additional-wrapper">
+        <legend class="additional-title">Additional ingredients</legend>
+        <ul class="additional-list">
+          <li class="additional-list-item">
+            <label>
+              <input 
+                type="checkbox" 
+                name="additional-ingredients"
+                value="chees"
+              >
+              Chees
+            </label>
+          </li>
+          <li class="additional-list-item">
+            <label>
+              <input 
+                type="checkbox" 
+                name="additional-ingredients"
+                value="peperoni"
+              >
+              Peperoni
+            </label>
+          </li>
+          <li class="additional-list-item">
+            <label>
+              <input 
+                type="checkbox" 
+                name="additional-ingredients"
+                value="mushrooms"
+              >
+              Mushrooms
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <label class="oreder-form-message-wrapper">
+        <span class="oreder-form-message-label">Your comment</span>
+        <textarea 
+          class="order-form-message" 
+          name="message" 
+          placeholder="Enter text..."
+        ></textarea>
+      </label>
+
+
+      <select name="city" class="oreder-form-city">
+        <option value="" disabled selected>---- Select a city ----</option>
+        <optgroup label="Kyiv region">
+          <option value="kyiv">Kyiv</option>
+          <option value="bucha">Bucha</option>
+          <option value="irpin">Irpin</option>
+        </optgroup>
+        <optgroup label="Dnipro region">
+          <option value="dnipro">Dnipro</option>
+          <option value="nikopol">Nikopol</option>
+          <option value="solone">Solone</option>
+        </optgroup>
+      </select>
+
+      <div>
+        <input 
+          type="checkbox" 
+          name="policy-checkbox"
+          id="policy-checkbox"
+          class="policy-checkbox visually-hidden"
+        >
+        <label class="policy-checkbox-label" for="policy-checkbox">
+          <span class="custom-policy-checkbox"></span>
+          I accept the terms
+        </label>
+      </div>
+
+      <div class="order-form-btn-wrapper">
+        <button 
+          class="order-form-btn order-form-btn-submit" 
+          type="submit"
+        >
+          Submit
+        </button>
+        <button 
+          class="order-form-btn order-form-btn-reset" 
+          type="reset"
+        >
+          Reset
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
+
