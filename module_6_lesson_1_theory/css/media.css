@@ -1,0 +1,161 @@
+/* ========== MIN-WIDTH ========== */
+
+/* body {
+  background-color: yellow;
+} */
+
+/* @media (min-width: 400px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: brown;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+
+/* @media (width >= 400px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (width >= 768px) {
+  body {
+    background-color: brown;
+  }
+}
+
+@media (width >= 1024px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+
+/* ========== MAX-WIDTH ========== */
+
+/* 0 - 1200 */
+/* @media (max-width: 1200px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: brown;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+
+/* @media (width <= 1200px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (width <= 768px) {
+  body {
+    background-color: brown;
+  }
+}
+
+@media (width <= 400px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+
+/* ========== TYPES ========== */
+/* 
+  all
+  screen
+  print
+*/
+
+/* @media print {
+  .page-menu {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+
+@media screen {
+  body {
+    background-color: #900;
+  }
+} */
+
+
+
+
+
+
+/* ========== AND ========== */
+
+
+/* @media screen and (min-width: 768px) and (max-width: 1200px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+
+
+
+
+
+/* ========== OR ========== */
+
+/* @media screen and (max-width: 768px), screen and (min-width: 1200px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+
+
+@media screen {
+  .about-title {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    display: block;
+  }
+
+  .nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
