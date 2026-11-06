@@ -44,7 +44,7 @@ body {
 2x - 192
 3x - 288 */
 
-@media screen {
+/* @media screen {
   .hero {
     width: 375px;
     height: 211px;
@@ -87,8 +87,102 @@ body {
   .hero {
     background-image: url("../images/retina/jpeg/bg-desktop@2x.jpg");
   }
+} */
+
+
+
+
+/* @media screen {
+  .hero {
+    width: 375px;
+    height: 211px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-image: image-set(
+      url("../images/retina/jpeg/bg-mobile.jpg") 1x,
+      url("../images/retina/jpeg/bg-mobile@2x.jpg") 2x
+    );
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 432px;
+    background-image: image-set(
+      url("../images/retina/jpeg/bg-tablet.jpg") 1x,
+      url("../images/retina/jpeg/bg-tablet@2x.jpg") 2x
+    );
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 675px;
+    background-image: image-set(
+      url("../images/retina/jpeg/bg-desktop.jpg") 1x,
+      url("../images/retina/jpeg/bg-desktop@2x.jpg") 2x
+    );
+  }
+} */
+
+
+
+@media screen {
+  .hero {
+    width: 375px;
+    height: 211px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-image: image-set(
+      url("../images/retina/avif/bg-mobile.avif") type("image/avif") 1x,
+      url("../images/retina/avif/bg-mobile@2x.avif") type("image/avif") 2x,
+
+      url("../images/retina/webp/bg-mobile.webp") type("image/webp") 1x,
+      url("../images/retina/webp/bg-mobile@2x.webp") type("image/webp") 2x,
+
+      url("../images/retina/jpeg/bg-mobile.jpg") type("image/jpeg") 1x,
+      url("../images/retina/jpeg/bg-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 432px;
+    background-image: image-set(
+      url("../images/retina/avif/bg-tablet.avif") type("image/avif") 1x,
+      url("../images/retina/avif/bg-tablet@2x.avif") type("image/avif") 2x,
+
+      url("../images/retina/webp/bg-tablet.webp") type("image/webp") 1x,
+      url("../images/retina/webp/bg-tablet@2x.webp") type("image/webp") 2x,
+
+      url("../images/retina/jpeg/bg-tablet.jpg") type("image/jpeg") 1x,
+      url("../images/retina/jpeg/bg-tablet@2x.jpg") type("image/jpeg") 2x
+    );
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 675px;
+    background-image: image-set(
+      url("../images/retina/avif/bg-desktop.avif") type("image/avif") 1x,
+      url("../images/retina/avif/bg-desktop@2x.avif") type("image/avif") 2x,
+
+      url("../images/retina/webp/bg-desktop.webp") type("image/webp") 1x,
+      url("../images/retina/webp/bg-desktop@2x.webp") type("image/webp") 2x,
+
+      url("../images/retina/jpeg/bg-desktop.jpg") 1x,
+      url("../images/retina/jpeg/bg-desktop@2x.jpg") 2x
+    );
+  }
+}
 
 
 
